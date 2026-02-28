@@ -1,3 +1,3 @@
-<!--- Blog breadcrumbs Squarespace 7.1 ---------------------------------->
-<!--- Copyright Primitus Consultancy [https://primitusconsultancy.com] -->
+<!--- Blog breadcrumbs      -->
+<!--- Copyright IghCreation -->
 window.addEventListener("DOMContentLoaded",(e=>{let t,l,i,n,o,a=document.querySelector(".blog-item-title"),r=window.location.href+"?format=json-pretty",d="";fetch(r).then((e=>e.json())).then((e=>{t=e.website.authenticUrl,l=e.collection.title,i=e.collection.fullUrl,n=e.item.title,o=e.item.fullUrl,d="<div class='blog-nav-display'><div class='blogcrumb'> <a  href='"+t+"' >Home</a><a  href='"+i+"' > "+l+"</a><a  href='#' > "+n+"</a></div></div>",a.insertAdjacentHTML("afterend",d)}))}));
